@@ -1,0 +1,498 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarBtn--repso {
+  display: none;
+  height: 4rem;
+  width: 4rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+  padding: 4rem;
+  display: flex;
+  background-color: #f8faff;
+}
+
+section.sideBar {
+  height: 100%;
+  width: 20%;
+  min-width: max-content;
+  background-image: linear-gradient(#4285f4, #3c83f9);
+  border-radius: 2rem;
+  padding: 0 4rem;
+  color: #fff;
+  position: relative;
+}
+
+p.sideBar--top-title {
+  height: 20%;
+  font-size: 3.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.sideBar--links {
+  height: max-content;
+  width: max-content;
+  gap: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.sideBar--links p,
+.sideBar-bottom-link,
+svg,
+.profile_img {
+  cursor: pointer;
+}
+
+.sideBar--links p svg {
+  margin-right: 2rem;
+}
+
+.sideBar--bottom {
+  height: max-content;
+  font-size: 1.75rem;
+  font-weight: 500;
+  position: absolute;
+  display: flex;
+  gap: 1.5rem;
+  bottom: 7%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Repsonsive Till Large Mobiles */
+@media (max-width: 28em) {
+  .htmlBody {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll !important;
+  }
+
+  html {
+    font-size: 60%;
+  }
+  .sidebarBtn--repso {
+    display: block;
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    z-index: 111;
+  }
+
+  section.sideBar {
+    position: absolute;
+    left: 0% !important;
+    border-radius: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10 !important;
+    position: fixed;
+  }
+
+  .main-body {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    left: -10%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-body--header {
+    font-size: 1.3rem;
+    width: max-content;
+    gap: 10rem;
+  }
+  .main-body--header--right .input--search {
+    display: none;
+  }
+  .total__Cards--section {
+    transform: translateX(-2rem);
+    grid-template-columns: repeat(1, 0.5fr) !important;
+    gap: 1rem;
+    width: max-content;
+    padding: 2rem;
+  }
+  .card {
+    width: 100vw;
+  }
+
+  .card .text {
+    width: max-content;
+  }
+
+  .aboutThisCard:last-child {
+    color: black;
+    height: max-content;
+    width: max-content !important;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: smaller;
+  }
+
+  section p.card_activity {
+    height: max-content;
+  }
+
+  section p.card_activity svg {
+    transform: scaleX(1) !important;
+  }
+  .top__products--section {
+    min-width: 100vw !important;
+    height: 50rem !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top__products--section p {
+    height: 100%;
+    min-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #SvgjsG1134 {
+    transform: scale(1.2) translate(12vw, -10%);
+  }
+
+  .card_user--details {
+    width: 100vw !important;
+  }
+  .icon {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .info {
+    width: max-content;
+    padding: 1.2rem;
+  }
+  .card_addProfile {
+    padding: 3rem 0;
+    width: 100% !important;
+  }
+}
+
+/* Repsonsive from Tablets */
+@media (min-width: 28em) and (max-width: 48em) {
+  .htmlBody {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll !important;
+  }
+
+  html {
+    font-size: 55%;
+  }
+
+  .sidebarBtn--repso {
+    display: block;
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    z-index: 111;
+  }
+
+  section.sideBar {
+    position: absolute;
+    left: 0% !important;
+    border-radius: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10 !important;
+    position: fixed;
+  }
+
+  .main-body {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    padding: 1rem !important;
+    margin: 0;
+  }
+
+  .main-body--header {
+    width: 100vw !important;
+    font-size: 1.3rem;
+    width: max-content;
+    gap: 10rem;
+  }
+  .main-body--header--right .input--search {
+    display: block;
+  }
+  .total__Cards--section {
+    transform: translateX(-2rem);
+    grid-template-columns: repeat(1, 0.5fr) !important;
+    gap: 2rem;
+    width: max-content;
+    padding: 2rem;
+  }
+  .card {
+    width: 100vw;
+  }
+
+  .card .text {
+    width: max-content;
+  }
+
+  .aboutThisCard:last-child {
+    color: black;
+    height: max-content;
+    width: max-content !important;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: smaller;
+  }
+
+  section p.card_activity {
+    height: max-content;
+    margin: 1rem 0;
+  }
+
+  section p.card_activity svg {
+    transform: scaleX(1) !important;
+  }
+  .top__products--section {
+    min-width: 100vw !important;
+    height: 50rem !important;
+    display: flex;
+    flex-direction: column;
+    margin-top: 010rem;
+  }
+
+  .top__products--section p {
+    height: 100%;
+    min-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activities--section {
+    height: max-content !important;
+  }
+
+  #SvgjsG1134 {
+    transform: scale(0.5) translate(50vw, 25vw);
+  }
+
+  .card_user--details {
+    width: 100vw !important;
+  }
+  .icon {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .info {
+    width: max-content;
+    padding: 1.2rem;
+  }
+  .card_addProfile {
+    padding: 3rem 0;
+    width: 100% !important;
+  }
+
+  div.apexcharts-legend.apexcharts-align-center.apx-legend-position-right {
+    position: absolute;
+    left: 50vw !important;
+    top: 10vw !important;
+  }
+}
+
+/* Repsonsive from Laptops */
+@media (min-width: 48em) and (max-width: 68em) {
+  .htmlBody {
+    margin: 0;
+    padding: 0;
+    display: flex !important;
+    padding: 2rem;
+  }
+
+  body {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll !important;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .sidebarBtn--repso {
+    display: none;
+  }
+
+  section.sideBar {
+    position: relative;
+    border-radius: 2rem;
+    min-height: 100vh !important;
+    width: 20%;
+    display: block;
+  }
+
+  .main-body {
+    position: relative;
+    width: 80%;
+    padding: 1rem !important;
+    margin: 0;
+  }
+
+  .main-body--header {
+    width: 98vw !important;
+    font-size: 1.3rem;
+    width: max-content;
+    gap: 10rem;
+  }
+  .main-body--header--right .input--search {
+    display: block;
+  }
+  .total__Cards--section {
+    transform: translateX(-2rem);
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem;
+    width: max-content;
+    padding: 2rem;
+  }
+  .card {
+    width: 49vw;
+  }
+
+  .card .text {
+    width: max-content;
+  }
+
+  .aboutThisCard:last-child {
+    color: black;
+    height: max-content;
+    width: max-content !important;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: smaller;
+  }
+
+  section p.card_activity {
+    height: max-content;
+    width: 100vw;
+    margin: 1rem 0;
+  }
+
+  section p.card_activity svg {
+    transform: scaleX(1) !important;
+  }
+  .top__products--section {
+    min-width: 100vw !important;
+    height: 50rem !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top__products--section p {
+    height: 100%;
+    min-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activities--section {
+    height: max-content !important;
+  }
+
+  #SvgjsG1134 {
+    transform: scale(0.5) translate(50vw, 25vw);
+  }
+
+  .card_user--details {
+    width: 100vw !important;
+  }
+  .icon {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .info {
+    width: max-content;
+    padding: 1.2rem;
+  }
+  .card_addProfile {
+    padding: 3rem 0;
+    width: 100% !important;
+  }
+
+  div.apexcharts-legend.apexcharts-align-center.apx-legend-position-right {
+    position: absolute;
+    left: 50vw !important;
+    top: 15rem !important;
+  }
+}
+
+@media (min-width: 68em) {
+  section.sideBar {
+    position: relative;
+    border-radius: 2rem;
+    min-height: 100vh !important;
+    width: 20%;
+    display: block;
+  }
+
+  .activities--section {
+    height: max-content !important;
+  }
+
+  .barchart--diagram {
+    margin: 0 !important;
+  }
+
+  .card {
+    height: max-content !important;
+  }
+
+  .top__products--section {
+    height: 25rem !important;
+  }
+  .card_addProfile,
+  .top__products--section p {
+    height: 20rem !important;
+    height: 100% !important;
+  }
+  .icon {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .info {
+    width: max-content;
+    padding: 0rem !important;
+  }
+  .card_user--details {
+    padding: 3rem 3rem !important;
+    grid-template-rows: 1fr 1fr 1fr !important;
+    column-gap: 1rem !important;
+    row-gap: 3rem !important;
+  }
+}

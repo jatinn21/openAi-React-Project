@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.htmlBody {
+  height: 100vh;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+}
+
+/* For Middle Mobile */
+@media (max-width: 23.4375em) and (max-width: 26em) {
+  .htmlBody {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  html {
+    font-size: 45%;
+  }
+  div#root svg {
+    transform: scale(1.8);
+  }
+
+  section.leftSide {
+    color: black;
+  }
+
+  section.leftSide p.company__name {
+    font-size: 3.5rem;
+    transform: none;
+    position: absolute;
+    top: 2%;
+    color: #000;
+  }
+
+  section.leftSide p.company__logo {
+    color: #000;
+  }
+
+  section.rightSide div.signin__Form {
+    height: 60%;
+    width: 100%;
+  }
+
+  form.formDetails,
+  .signupWith {
+    width: 100%;
+  }
+
+  section.leftSide p.company__socialMedia {
+    top: 90%;
+    position: absolute;
+    left: auto;
+    width: max-content;
+    background-color: #1f83f7;
+  }
+
+  span.registerHighlight {
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    color: #1e7be4 !important;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+}
+
+/* For Larger Mobile */
+@media (max-width: 27em) {
+  .htmlBody {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    overflow: hidden;
+  }
+
+  html {
+    font-size: 52%;
+  }
+
+  div#root {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+  }
+
+  div#root svg {
+    transform: scale(1.5);
+  }
+
+  section.leftSide {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+
+  section.leftSide p.company__logo {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: #000;
+    font-size: 2rem;
+  }
+
+  section.leftSide p.company__name {
+    font-size: 3.5rem;
+    transform: none;
+    position: absolute;
+    top: 2%;
+    color: #000;
+  }
+
+  section.rightSide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+  }
+
+  section.rightSide div.signin__Form {
+    height: 60%;
+    width: 100%;
+  }
+
+  section.rightSide div.signin__Form h1,
+  section.rightSide div.signin__Form span {
+    color: white;
+  }
+
+  form.formDetails,
+  .signupWith {
+    width: 100%;
+  }
+
+  section.leftSide p.company__socialMedia {
+    height: max-content;
+    top: 15%;
+    margin-top: 2rem;
+    left: auto;
+    bottom: 0%;
+    padding: 1rem;
+    width: max-content;
+    border-bottom: 1px solid white;
+  }
+
+  section.leftSide p.company__socialMedia span svg {
+    max-height: 2rem;
+  }
+
+  span.registerText {
+    font-size: 1.4rem !important;
+    color: white;
+  }
+  span.registerHighlight {
+    background-color: aliceblue;
+    color: rgb(31, 116, 207) !important;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+}
+
+/* For Tablets */
+@media (min-width: 27em) and (max-width: 68em) {
+  .htmlBody {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  html {
+    font-size: 75%;
+  }
+  div#root svg {
+    transform: scale(1.7);
+  }
+
+  section.leftSide {
+    color: black;
+  }
+  section.rightSide {
+    position: absolute;
+    min-height: 100vh !important;
+    width: max-content !important;
+    z-index: 10;
+    transform: translate(40%, 40%);
+  }
+
+  section.leftSide p.company__name {
+    font-size: 3.5rem;
+    transform: none;
+    position: absolute;
+    top: 2%;
+    color: #000;
+  }
+
+  section.leftSide p.company__logo {
+    color: #000;
+  }
+
+  section.rightSide div.signin__Form {
+    height: inherit;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw !important;
+  }
+
+  form.formDetails,
+  .signupWith {
+    width: 100%;
+  }
+
+  section.leftSide p.company__socialMedia {
+    position: absolute;
+    height: 100%;
+    width: max-content;
+    top: 25%;
+    left: 50%;
+    /* transform: translate(60%, 150%); */
+    display: flex;
+    gap: 5rem;
+  }
+
+  span.registerText {
+    width: 100%;
+    color: rgb(244, 237, 237);
+  }
+
+  span.registerHighlight {
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    color: #1e7be4 !important;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+  section.rightSide {
+    position: absolute;
+    min-height: 100vh !important;
+    width: 100% !important;
+    z-index: 10;
+    transform: translate(40%, 40%);
+  }
+}
+
+/* For More Bigger Screen , our Code is already capable to adjust accordingly */
