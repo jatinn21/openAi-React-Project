@@ -3,11 +3,11 @@ import "../css/Signup.css";
 
 // import LoginButton from "./loginButton";
 import { useNavigate } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
+import AuthLogin from "./authLogin";
+import AuthProfile from "./authProfile";
 
 function LandingPage() {
   const navigate = useNavigate();
-  const { loginWithRedirect } = useAuth0();
   const onSubmit = (e) => {
     e.preventDefault();
     navigate("/dashboard");
@@ -152,14 +152,9 @@ function LandingPage() {
                   </clipPath>
                 </defs>
               </svg>
-              <button
-                onClick={() => {
-                  loginWithRedirect();
-                  // navigate("/dashboard");
-                }}
-              >
-                Sign in with Google
-              </button>
+              {/*----------Login button**/}
+              <AuthLogin></AuthLogin>
+              <AuthProfile></AuthProfile>
             </p>
             <p className="signupButton center">
               <svg

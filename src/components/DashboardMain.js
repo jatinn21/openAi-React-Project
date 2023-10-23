@@ -207,7 +207,7 @@ function DashboardMain() {
                     },
                   },
                 },
-                labels: ["USA", "Russia", "India"],
+                labels: ["Basic Tees", "Custom Short Pants", "Super Hoodies"],
               }}
             />
             <p className="aboutThisCard">

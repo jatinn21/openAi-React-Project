@@ -61,16 +61,16 @@ html {
   section.leftSide p.company__socialMedia {
     top: 90%;
     position: absolute;
-    left: auto;
+    left: auto !important;
     width: max-content;
-    background-color: #1f83f7;
+    background-color: #4285f4;
   }
 
   span.registerHighlight {
     width: 100%;
     text-align: center;
     background-color: aliceblue;
-    color: #1e7be4 !important;
+    color: #4285f4 !important;
     text-transform: capitalize;
     text-decoration: underline;
   }
@@ -166,7 +166,7 @@ html {
   }
   span.registerHighlight {
     background-color: aliceblue;
-    color: rgb(31, 116, 207) !important;
+    color: #4285f4 !important;
     text-transform: capitalize;
     text-decoration: underline;
   }
@@ -243,7 +243,7 @@ html {
     width: 100%;
     text-align: center;
     background-color: aliceblue;
-    color: #1e7be4 !important;
+    color: #4285f4 !important;
     text-transform: capitalize;
     text-decoration: underline;
   }

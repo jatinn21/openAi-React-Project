@@ -191,6 +191,10 @@ svg,
     padding: 3rem 0;
     width: 100% !important;
   }
+  .apexcharts-legend-series span:last-child {
+    height: max-content;
+    font-size: xx-small !important;
+  }
 }
 
 /* Repsonsive from Tablets */
@@ -323,6 +327,11 @@ svg,
     left: 50vw !important;
     top: 10vw !important;
   }
+  .apexcharts-legend-series span:last-child {
+    height: max-content;
+    padding: 1rem;
+    font-size: xx-small !important;
+  }
 }
 
 /* Repsonsive from Laptops */
@@ -450,6 +459,11 @@ svg,
     left: 50vw !important;
     top: 15rem !important;
   }
+  .apexcharts-legend-series span:last-child {
+    height: max-content;
+    /* padding: 1rem; */
+    /* font-size: larger !important; */
+  }
 }
 
 @media (min-width: 68em) {
@@ -494,5 +508,10 @@ svg,
     grid-template-rows: 1fr 1fr 1fr !important;
     column-gap: 1rem !important;
     row-gap: 3rem !important;
+  }
+  .apexcharts-legend-series span:last-child {
+    height: max-content;
+    padding: 1rem;
+    font-size: larger !important;
   }
 }
